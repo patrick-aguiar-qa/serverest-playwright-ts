@@ -1,0 +1,35 @@
+{
+  "name": "serverest-playwright-ts",
+  "version": "1.0.0",
+  "description": "API and E2E web tests for ServeRest with Playwright and TypeScript",
+  "scripts": {
+    "test": "playwright test",
+    "test:api": "playwright test --project=api",
+    "test:ui": "playwright test --project=chromium --project=firefox --project=mobile",
+    "test:headed": "playwright test --project=chromium --headed",
+    "test:debug": "playwright test --project=chromium --debug",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "qa",
+    "sdet",
+    "playwright",
+    "typescript",
+    "e2e",
+    "api-testing",
+    "test-automation"
+  ],
+  "author": "Patrick Aguiar",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.65.0",
+    "@types/node": "^26.6.6",
+    "eslint": "^10.14.0",
+    "eslint-plugin-playwright": "^2.12.2",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.72.2"
+  }
+}
